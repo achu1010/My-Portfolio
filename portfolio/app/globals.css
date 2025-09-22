@@ -1,0 +1,83 @@
+/* CSS file for the portfolio project using Tailwind CSS */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #2c3e50;
+  --background: #f5f5f5;
+  --accent: #3498db;
+  --text: #1a1a1a;
+  --secondary-text: #666;
+  --glow-color: #3498db;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--text);
+  font-family: 'Inter', sans-serif;
+  line-height: 1.6;
+}
+
+/* Glow Button Effects */
+@media (prefers-reduced-motion: no-preference) {
+  .glow-button-hover-lift {
+    transition: transform 0.2s ease;
+  }
+  .glow-button-hover-lift:hover {
+    transform: translateY(-2px);
+  }
+}
+
+/* Blue shining border animation */
+@keyframes borderGlow {
+  0% {
+    box-shadow: 0 0 5px 0px var(--glow-color);
+  }
+  50% {
+    box-shadow: 0 0 15px 3px var(--glow-color);
+  }
+  100% {
+    box-shadow: 0 0 5px 0px var(--glow-color);
+  }
+}
+
+.card-dark {
+  background-color: rgba(30, 41, 59, 0.8);
+  color: #f8fafc;
+  border: 1px solid rgba(100, 116, 139, 0.2);
+  position: relative;
+}
+
+.card-dark:hover {
+  animation: borderGlow 2s infinite;
+  border-color: var(--glow-color);
+}
+
+.dark-section {
+  background-color: #0f172a;
+  color: #f8fafc;
+}
+
+@layer components {
+  .container-custom {
+    @apply max-w-[1200px] mx-auto px-5;
+  }
+  
+  .section-padding {
+    @apply py-16 md:py-20;
+  }
+  
+  .section-title {
+    @apply text-2xl md:text-3xl font-bold mb-6 text-primary;
+  }
+  
+  .card {
+    @apply bg-white rounded-lg shadow-md p-6 transition-transform hover:scale-105 hover:shadow-lg;
+  }
+}
