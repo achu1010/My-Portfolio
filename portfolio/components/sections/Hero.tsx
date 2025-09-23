@@ -13,7 +13,7 @@ export default function Hero() {
           alt="Background"
           fill
           priority
-          quality={85}
+          quality={100}
           className="object-cover object-center"
         />
       </div>
@@ -58,7 +58,7 @@ export default function Hero() {
             <GlowButton href="https://www.linkedin.com/in/achuth-krishna-09b090320" color="blue" target="_blank">
               LinkedIn
             </GlowButton>
-            <GlowButton href="/documents/ACHUTH_KRISHNA_RESUME.pdf" color="green" target="_blank">
+            <GlowButton href="/documents/Achuth_Resume.pdf" color="green" target="_blank">
               View CV
             </GlowButton>
             <GlowButton href="https://github.com/achu1010" color="purple" target="_blank">

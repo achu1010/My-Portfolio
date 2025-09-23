@@ -33,7 +33,7 @@ export default function Languages() {
           <LanguageItem language="English" level="Fluent" percentage={100} />
           <LanguageItem language="Malayalam" level="Fluent" percentage={100} />
           <LanguageItem language="Hindi" level="Fluent" percentage={100} />
-          <LanguageItem language="Tamil" level="Fluent" percentage={70} />
+          <LanguageItem language="Tamil" level="Intermediate" percentage={70} />
         </div>
       </div>
     </section>
