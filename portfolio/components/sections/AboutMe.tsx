@@ -3,17 +3,17 @@ import Image from 'next/image';
 const AboutMe = () => {
   return (
     <section className="relative py-16 flex justify-center items-center" id="about">
-      {/* Background Image */}
+      {/* Background Video */}
       <div className="absolute inset-0 w-full h-full overflow-hidden">
-        <div 
+        <video
           className="absolute w-full h-full object-cover"
-          style={{
-            backgroundImage: 'url("/images/aboutme_bg.gif")',
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
-            backgroundRepeat: 'no-repeat'
-          }}
-        ></div>
+          autoPlay
+          loop
+          muted
+          playsInline
+        >
+          <source src="/images/aboutme_bg.mp4" type="video/mp4" />
+        </video>
         <div className="absolute inset-0 bg-black/40"></div>
       </div>
       
