@@ -58,7 +58,7 @@ export default function ConnectWithMe() {
       </div>
       
       <div className="container mx-auto px-4 relative z-10">
-        <h2 className="text-3xl font-bold text-center mb-12 text-orange-400">Connect With Me</h2>
+        <h2 className="text-3xl font-bold text-center mb-12 text-orange-400 animate-pulse">Connect With Me</h2>
         
         <div className="max-w-3xl mx-auto bg-white/20 backdrop-blur-md rounded-lg shadow-lg p-8 border border-white/20">
           <p className="text-lg mb-6 text-center text-orange-500 font-medium">
