@@ -267,7 +267,7 @@ export default function Skills() {
           {/* Drag instruction */}
           {isSpread && (
             <div className="absolute left-1/2 top-4 transform -translate-x-1/2 text-white text-center z-10 transition-opacity duration-500 opacity-70 hover:opacity-100">
-              <p className="text-sm bg-blue-600/80 px-3 py-1 rounded-full backdrop-blur-sm">Drag skills to reposition</p>
+              <p className="text-sm bg-blue-600/80 px-3 py-1 rounded-full backdrop-blur-sm">Drag and reposition if you can</p>
             </div>
           )}
           
